@@ -21,6 +21,10 @@ class EventoController extends Controller
             $eventos[] = $evento;
         }
 
+        if (empty($eventos)) {
+            return response()->json([], 204);
+        }
+
         return response()->json([
             'eventos' => $eventos
         ]);
@@ -29,15 +33,15 @@ class EventoController extends Controller
     public function getFotosEvento($evento_id, $usuario_id)
     {
         $evento = Evento::find($evento_id);
-        
+
         if (!$evento) {
             return response()->json(['error' => 'Evento no encontrado'], 404);
         }
-        
+
         $fotos = Fotografia::where('evento_id', $evento_id)->get();
-        
+
         $fotos_resultado = [];
-        
+
         foreach ($fotos as $foto) {
             if ($foto->tipo == 'Publico') {
                 $fotos_resultado[] = $foto;
@@ -45,14 +49,37 @@ class EventoController extends Controller
                 $validacion = FotoUser::where('foto_id', $foto->id)
                     ->where('user_id', $usuario_id)
                     ->first();
-                    
+
                 if ($validacion) {
                     $fotos_resultado[] = $foto;
                 }
             }
         }
-        
-        return response()->json(['evento' => $evento, 'fotos' => $fotos_resultado]);
-    }
 
+        if (empty($fotos_resultado)) {
+            return response()->json([], 204);
+        }
+
+        return response()->json(['fotos' => $fotos_resultado]);
+    }
+    
+    public function getFotosComprada($usuario_id)
+    {
+        $fotos = Fotografia::all();
+        $foto_users = FotoUser::where('estado', 'Comprado')->where('user_id', $usuario_id)->get();
+
+        if ($foto_users->isEmpty()) {
+            return response()->json([], 204);
+        }
+
+        $fotos_resultado = [];
+
+        foreach ($fotos as $foto) {
+            if ($foto_users->contains('foto_id', $foto->id)) {
+                $fotos_resultado[] = $foto;
+            }
+        }
+
+        return response()->json(['fotos' => $fotos_resultado]);
+    }
 }
