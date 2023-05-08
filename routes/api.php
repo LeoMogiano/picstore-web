@@ -26,3 +26,5 @@ Route::post('login', [AuthController::class, 'login']);
 Route::get('/usuarios/{id}/eventos', [EventoController::class, 'eventosPorUsuario']);
 Route::get('/eventos/{evento_id}/fotos/{usuario_id}', [EventoController::class, 'getFotosEvento']);
 Route::get('/fotos/compradas/{usuario_id}', [EventoController::class, 'getFotosComprada']);
+Route::get('/tarjetas/{usuario_id}', [EventoController::class, 'getTarjetas']);
+Route::post('/fotografias/{fotoId}/buy/{userId}/{tarjetaId}', [EventoController::class, 'buyFoto']);
