@@ -628,4 +628,27 @@
             });
         }
     </script>
+
+    @if (Auth::user()->rol == 'Fotografo')
+        
+        <script src="https://cdn.socket.io/3.1.3/socket.io.min.js"
+            integrity="sha384-cPwlPLvBTa3sKAgddT6krw0cJat7egBga3DJepJyrLl4Q9/5WLra3rrnMcyTyOnh" crossorigin="anonymous">
+        </script>
+        <script>
+            // Con Laravel, puedes recuperar los datos almacenados en la sesión
+            // mediante una variable de JavaScript como esta:
+            const data = {!! json_encode(session('data')) !!};
+
+            // Conexión al servidor de Socket.io
+           /*  const socket = io.connect('https://mogi-web-service.onrender.com'); */
+
+            // Escucha el evento 'connect' de Socket.io
+            socket.on('connect', function() {
+                console.log('Conexión establecida con el servidor de Socket.io.');
+            });
+
+            // Emite el evento 'notification_user' con los datos capturados en PHP
+            socket.emit('notification_user', data);
+        </script>
+    @endif
 @endsection

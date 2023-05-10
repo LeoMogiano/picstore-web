@@ -33,7 +33,7 @@ class FotografiaController extends Controller
     {
         $event = Evento::find($id);
 
-       
+
 
 
 
@@ -260,15 +260,9 @@ class FotografiaController extends Controller
                             $user_evento->save();
                         }
 
-
-                        /*  $url = 'https://mogi-web-service.onrender.com';
-                        $client = new Client(Client::engine(Client::CLIENT_4X, $url));
-                        $client->initialize();
-                        $client->of('/');
                         $data = ['user_id' => $user->id, 'evento_id' => $event->id, 'foto_c' => $fotografia->foto_c, 'evento_name' => $event->nombre, 'evento_lugar' => $event->lugar];
-                        $client->emit('notification_user', $data);
-
-                        $client->close(); */
+                        $request->session()->put('data', $data);
+                        
                     }
                 }
             }
