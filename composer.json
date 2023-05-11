@@ -13,7 +13,8 @@
         "laravel/framework": "^10.0",
         "laravel/sanctum": "^3.2",
         "laravel/tinker": "^2.6",
-        "league/flysystem-aws-s3-v3": "^3.13"
+        "league/flysystem-aws-s3-v3": "^3.13",
+        "ext-gd": "*"
     },
     "require-dev": {
         "spatie/laravel-ignition": "^2.0",
