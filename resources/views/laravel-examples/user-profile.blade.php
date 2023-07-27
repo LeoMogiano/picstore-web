@@ -243,74 +243,73 @@
     @endif
 
     @if (Auth::user()->rol == 'Invitado')
-            <div class="container-fluid py-4">
-                <div class="card">
-                    <div class="d-flex justify-content-between m-3" style="margin-right: 6px; position: relative; ">
-                        <div class="col-xl-3 col-sm-4 " style="width: 21.6rem;">
-                            <div class="card">
-                                <div class="card p-3">
-                                    <div class="row">
+        <div class="container-fluid py-4">
+            <div class="card">
+                <div class="d-flex justify-content-between m-3" style="margin-right: 6px; position: relative; ">
+                    <div class="col-xl-3 col-sm-4 " style="width: 21.6rem;">
+                        <div class="card">
+                            <div class="card p-3">
+                                <div class="row">
 
-                                        <div class="col-7">
-                                            <div class="numbers mt-1">
-                                                <h5 class="font-weight-bolder mb-0">
-                                                    Fotos Compradas
-                                                </h5>
-                                            </div>
+                                    <div class="col-7">
+                                        <div class="numbers mt-1">
+                                            <h5 class="font-weight-bolder mb-0">
+                                                Fotos Compradas
+                                            </h5>
                                         </div>
-                                        <div class="col-5 text-end">
-                                            <div
-                                                class="icon icon-shape bg-gradient-dark shadow text-center border-radius-md icon-sm">
-                                                <i class="fas fa-image text-xs opacity-10" aria-hidden="true"
-                                                    style="color: #ffff;"></i>
-                                            </div>
+                                    </div>
+                                    <div class="col-5 text-end">
+                                        <div
+                                            class="icon icon-shape bg-gradient-dark shadow text-center border-radius-md icon-sm">
+                                            <i class="fas fa-image text-xs opacity-10" aria-hidden="true"
+                                                style="color: #ffff;"></i>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-
-                        <div class="col-2 text-end" style="display: flex; justify-content: flex-end;">
-                            <form action="{{ route('portafolios.store') }}" method="POST" role="form text-left"
-                                enctype="multipart/form-data" style="flex: 1; order: 2;">
-                                @csrf
-                                <input type="file" id="seleccionarFoto1" name="foto" style="display:none;"
-                                     hidden>
-                                <button type="submit" class="btn bg-gradient-dark btn-md "
-                                    style="width: 100%; height: 50px;" hidden>Guardar</button>
-                            </form>
-                            <button onclick="document.getElementById('seleccionarFoto1').click();"
-                                class="btn bg-gradient-dark btn-md" style="margin-right: 10px; order: 1;" hidden><b>+</b> Foto
-                            </button >
-                        </div>
-
                     </div>
-                    <div class="row">
-                        
-                        @foreach ($fotous as $fotou)
+
+
+                    <div class="col-2 text-end" style="display: flex; justify-content: flex-end;">
+                        <form action="{{ route('portafolios.store') }}" method="POST" role="form text-left"
+                            enctype="multipart/form-data" style="flex: 1; order: 2;">
+                            @csrf
+                            <input type="file" id="seleccionarFoto1" name="foto" style="display:none;" hidden>
+                            <button type="submit" class="btn bg-gradient-dark btn-md "
+                                style="width: 100%; height: 50px;" hidden>Guardar</button>
+                        </form>
+                        <button onclick="document.getElementById('seleccionarFoto1').click();"
+                            class="btn bg-gradient-dark btn-md" style="margin-right: 10px; order: 1;" hidden><b>+</b> Foto
+                        </button>
+                    </div>
+
+                </div>
+                <div class="row">
+                    @foreach ($fotous as $fotou)
                         @foreach ($fotos as $foto)
                             @if ($fotou->foto_id == $foto->id and $fotou->estado == 'Comprado')
-                            <div class="col-md-4">
-                                <div class="card" style="overflow: hidden; margin: 15px;">
-                                    <img src="{{ $foto->foto }}" alt="Imagen de la carta" class="card-img"
-                                        style="width: 100%; height: 300px; object-fit: cover; cursor: pointer;"
-                                        onclick="toggleCentered(event)">
+                                <div class="col-md-4">
+                                    <div class="card" style="overflow: hidden; margin: 15px;">
+                                        <img src="{{ $foto->foto }}" alt="Imagen de la carta" class="card-img"
+                                            style="width: 100%; height: 300px; object-fit: cover; cursor: pointer;"
+                                            onclick="toggleCentered(event)">
+                                        <a href="{{ route('download', ['url' => $foto->foto]) }}">
+                                            <button class="btn bg-gradient-dark btn-md mt-4 mb-2" style="position: absolute; bottom: 0px; right: 0px;">Descargar</button>
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
                             @endif
                         @endforeach
                     @endforeach
-
-                            
-                        
-                    </div>
                 </div>
+
             </div>
-    </div>
+        </div>
+        </div>
     @endif
 
-   
+
 
     <div id="overlay" class="overlay" style="display: none;">
         <div class="close-button" onclick="toggleCentered()">x</div>
@@ -353,7 +352,10 @@
             align-items: center;
             border-radius: 0.4rem;
         }
+
     </style>
+
+
 
 
 

@@ -15,7 +15,8 @@ use App\Http\Controllers\HomeController;
 	use App\Http\Controllers\UserEventoController;
 	use App\Http\Controllers\WelcomeController;
 	use Illuminate\Http\Request;
-	use Illuminate\Support\Facades\Password;
+use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Password;
 	use Illuminate\Support\Facades\Route;
 
 	/*
@@ -99,7 +100,16 @@ use App\Http\Controllers\HomeController;
 		Route::post('/fotografias/{evento_id}', [FotografiaController::class, 'store'])->name('fotografias.store');
 		Route::post('/fotografias/{id}/buyed', [FotografiaController::class, 'buyed'])->name('fotografias.buyed');
 
-		//RECIBO
+		//DESCARGA
+		Route::get('/download', function () {
+			$url = request('url');
+			
+			// Realiza la descarga de la imagen desde Amazon S3
+			$response = Http::get($url);
+			
+			// Asegúrate de establecer correctamente las cabeceras para forzar la descarga como un archivo
+			return response($response)->header('Content-Disposition', 'attachment; filename=imagen.jpg');
+		})->name('download');
 		
 
 		/* Route::get('user-management', function () {
