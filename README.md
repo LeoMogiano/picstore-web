@@ -82,19 +82,25 @@ Check out some screenshots of the platform below.
 
 
 *Login*
+
 <img loading="lazy" width="90%" src="./screenshots/s1.png" alt="Login" />
 
 *Dashboard*
+
 <img loading="lazy" width="90%" src="./screenshots/s2.png" alt="Dashboard" />
 
 *Photographers Management*
+
 <img loading="lazy" width="90%" src="./screenshots/s3.png" alt="Photographers Management" />
 
 *Event Management*
+
 <img loading="lazy" width="90%" src="./screenshots/s4.png" alt="Event Management" />
 
 *Event Information*
+
 <img loading="lazy" width="90%" src="./screenshots/s5.png" alt="Event Information" />
 
 *Management of Acquired Photos*
+
 <img loading="lazy" width="90%" src="./screenshots/s6.png" alt="Management of Acquired Photos" />
