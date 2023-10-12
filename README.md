@@ -67,9 +67,9 @@ php artisan serve
 A continuación, se presentan algunas capturas de pantalla de la Plataforma de Gestión de Fotos:
 
 
-<img loading="lazy" width="90%" src="./screenshots/s1.jpg" alt="Inicio Sesión" />
+<img loading="lazy" width="90%" src="./screenshots/s1.png" alt="Inicio Sesión" />
 *Pantalla de inicio de sesión*
 
 
-<img loading="lazy" width="90%" src="./screenshots/s2.jpg" alt="Inicio Sesión" />
+<img loading="lazy" width="90%" src="./screenshots/s2.png" alt="Inicio Sesión" />
 *Página principal de la plataforma*
