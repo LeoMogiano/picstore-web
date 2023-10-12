@@ -1,87 +1,27 @@
-# Plataforma de Gestión de Fotos para Eventos Sociales basadas en la IA
+# Photo Management Platform for Social Events based on AI
 
-Este es el repositorio de la Plataforma de Gestión de Fotos para Eventos Sociales basadas en la Inteligencia Artificial (IA). Esta aplicación está desarrollada utilizando el framework de Laravel y se enfoca en la gestión y organización de fotos para eventos como bodas, fiestas, graduaciones, y más, aprovechando la IA para simplificar y mejorar la experiencia de los usuarios.
+This is the repository for the Photo Management Platform for Social Events based on Artificial Intelligence (AI). This application is developed using the Laravel framework and focuses on managing and organizing photos for events such as weddings, parties, graduations, and more, leveraging AI to simplify and enhance the user experience.
 
-## Funcionalidades Clave
+## Key Features
 
-- Subida y almacenamiento seguro de fotos.
-- Etiquetado y categorización automática de fotos utilizando IA.
-- Organización de fotos por eventos y álbumes.
-- Compartir fotos con amigos y familiares de manera segura.
-- Búsqueda avanzada de fotos utilizando etiquetas y metadatos.
-- Integración con redes sociales para compartir fotos fácilmente.
+- Secure photo upload and storage.
+- Automatic photo tagging and categorization using AI.
+- Organization of photos by events and albums.
+- Secure photo sharing with friends and family.
+- Advanced photo search using tags and metadata.
+- Integration with social media for easy photo sharing.
 
-## Requisitos del Sistema
+## System Requirements
 
-- PHP 7.4 o superior
+- PHP 7.4 or higher
 - Composer
 - Laravel 8
-- MySQL o cualquier otro sistema de gestión de bases de datos compatible
-- Servidor web (por ejemplo, Apache o Nginx)
+- MySQL or any other compatible database management system
+- Web server (e.g., Apache or Nginx)
 
-## Instalación
+## Installation
 
-1. Clona este repositorio en tu máquina local:
+1. Clone this repository to your local machine:
 
-git clone https://github.com/LeoMogiano/picstore-web.git
-
-2. Instala las dependencias del proyecto utilizando Composer:
-
-composer install
-
-3. Crea un archivo .env a partir del archivo .env.example:
-
-cp .env.example .env
-
-4. Genera una nueva clave de aplicación:
-
-php artisan key:generate
-
-5. Configura las variables de entorno en el archivo .env:
-
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=nombre_de_tu_base_de_datos
-DB_USERNAME=tu_usuario
-DB_PASSWORD=tu_contraseña
-
-AWS_ACCESS_KEY_ID=
-AWS_SECRET_ACCESS_KEY=
-AWS_DEFAULT_REGION=
-AWS_BUCKET=
-AWS_USE_PATH_STYLE_ENDPOINT=
-
-6. Ejecuta las migraciones para crear las tablas de la base de datos:
-
-php artisan migrate
-
-7. Inicia el servidor de desarrollo:
-
-php artisan serve
-
-9. Abre tu navegador y visita [http://localhost:8000](http://localhost:8000) para acceder a la plataforma.
-
-## Capturas de Pantalla
-
-A continuación, se presentan algunas capturas de pantalla de la Plataforma de Gestión de Fotos:
-
-
-<img loading="lazy" width="90%" src="./screenshots/s1.png" alt="Inicio Sesión" />
-*Pantalla de inicio de sesión*
-<br>
-
-<img loading="lazy" width="90%" src="./screenshots/s2.png" alt="Inicio Sesión" />
-*Página principal de la plataforma*
-<br>
-<img loading="lazy" width="90%" src="./screenshots/s3.png" alt="Inicio Sesión" />
-*Contratación de Fotografos*
-<br>
-<img loading="lazy" width="90%" src="./screenshots/s4.png" alt="Inicio Sesión" />
-*Gestión de Eventos*
-<br>
-<img loading="lazy" width="90%" src="./screenshots/s5.png" alt="Inicio Sesión" />
-*Información de Eventos*
-<br>
-<img loading="lazy" width="90%" src="./screenshots/s6.png" alt="Inicio Sesión" />
-*Gestión de Fotos Adquiridas*
+   ```bash
+   git clone https://github.com/LeoMogiano/picstore-web.git
