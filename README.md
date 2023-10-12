@@ -69,19 +69,19 @@ A continuación, se presentan algunas capturas de pantalla de la Plataforma de G
 
 <img loading="lazy" width="90%" src="./screenshots/s1.png" alt="Inicio Sesión" />
 *Pantalla de inicio de sesión*
-
+<br>
 
 <img loading="lazy" width="90%" src="./screenshots/s2.png" alt="Inicio Sesión" />
 *Página principal de la plataforma*
-
+<br>
 <img loading="lazy" width="90%" src="./screenshots/s3.png" alt="Inicio Sesión" />
 *Contratación de Fotografos*
-
+<br>
 <img loading="lazy" width="90%" src="./screenshots/s4.png" alt="Inicio Sesión" />
 *Gestión de Eventos*
-
+<br>
 <img loading="lazy" width="90%" src="./screenshots/s5.png" alt="Inicio Sesión" />
 *Información de Eventos*
-
+<br>
 <img loading="lazy" width="90%" src="./screenshots/s6.png" alt="Inicio Sesión" />
 *Gestión de Fotos Adquiridas*
