@@ -66,7 +66,7 @@ php artisan serve
 
 A continuación, se presentan algunas capturas de pantalla de la Plataforma de Gestión de Fotos:
 
-![Pantalla de Inicio de Sesión](/screenshots/Imagen1.jpg)
+![Pantalla de Inicio de Sesión]<img loading="lazy" width="30px" src="./screenshots/Imagen1.jpg" alt="Inicio Sesión" />
 *Pantalla de inicio de sesión*
 
 ![Página Principal de la Plataforma](/screenshots/home.png)
