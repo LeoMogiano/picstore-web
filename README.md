@@ -80,20 +80,21 @@ This is the repository for the Photo Management Platform for Social Events based
 
 Check out some screenshots of the platform below.
 
-_Login_
+
+*Login*
 <img loading="lazy" width="90%" src="./screenshots/s1.png" alt="Login" />
 
-_Dashboard_
+*Dashboard*
 <img loading="lazy" width="90%" src="./screenshots/s2.png" alt="Dashboard" />
 
-_Photographers Management_
+*Photographers Management*
 <img loading="lazy" width="90%" src="./screenshots/s3.png" alt="Photographers Management" />
 
-_Event Management_
+*Event Management*
 <img loading="lazy" width="90%" src="./screenshots/s4.png" alt="Event Management" />
 
-_Event Information_
+*Event Information*
 <img loading="lazy" width="90%" src="./screenshots/s5.png" alt="Event Information" />
 
-_Management of Acquired Photos_
+*Management of Acquired Photos*
 <img loading="lazy" width="90%" src="./screenshots/s6.png" alt="Management of Acquired Photos" />
