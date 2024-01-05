@@ -1,7 +1,9 @@
 # Plataforma de Gestión de Fotos para Eventos basada en IA
 [English](./README.md) | [Español](./README.es.md) | [Français](./README.fr.md) | [日本語](./README.jp.md)
 
-![Logo](./public/img/fav.png)
+<p align="center">
+  <img loading="lazy" src="./public/img/fav.png" alt="Logo" />
+</p>
 
 Este es el repositorio para la Plataforma de Gestión de Fotos para Eventos Sociales basada en Inteligencia Artificial (IA). Esta aplicación está desarrollada utilizando el framework Laravel y se centra en la gestión y organización de fotos para eventos como bodas, fiestas, graduaciones, y más, aprovechando la IA para simplificar y mejorar la experiencia del usuario.
 

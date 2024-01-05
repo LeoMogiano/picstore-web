@@ -1,7 +1,9 @@
 # 写真管理プラットフォーム for ソーシャルイベント
 [English](./README.md) | [Español](./README.es.md) | [Français](./README.fr.md) | [日本語](./README.jp.md)
 
-![Logo](./public/img/fav.png)
+<p align="center">
+  <img loading="lazy" src="./public/img/fav.png" alt="Logo" />
+</p>
 
 これは、人工知能（AI）を基にしたソーシャルイベントの写真管理プラットフォームのためのリポジトリです。このアプリケーションはLaravelフレームワークを使用して開発され、結婚式、パーティー、卒業式などのイベントの写真の管理と整理に焦点を当てています。ユーザーエクスペリエンスを簡素化し、向上させるためにAIを活用しています。
 
