@@ -88,24 +88,36 @@ Jetez un œil à quelques captures d'écran de la plateforme ci-dessous.
 
 *Login*
 
-<img loading="lazy" width="90%" src="./screenshots/s1.png" alt="Login" />
+<p align="center">
+    <img loading="lazy" width="90%" src="./screenshots/s1.png" alt="Login" />
+</p>
 
 *Dashboard*
 
-<img loading="lazy" width="90%" src="./screenshots/s2.png" alt="Dashboard" />
+<p align="center">
+    <img loading="lazy" width="90%" src="./screenshots/s2.png" alt="Dashboard" />
+</p>
 
 *Gestion des Photographes*
 
-<img loading="lazy" width="90%" src="./screenshots/s3.png" alt="Photographers Management" />
+<p align="center">
+    <img loading="lazy" width="90%" src="./screenshots/s3.png" alt="Photographers Management" />
+</p>
 
 *Gestion des Événements*
 
-<img loading="lazy" width="90%" src="./screenshots/s4.png" alt="Event Management" />
+<p align="center">
+    <img loading="lazy" width="90%" src="./screenshots/s4.png" alt="Event Management" />
+</p>
 
 *Informations sur l'Événement*
 
-<img loading="lazy" width="90%" src="./screenshots/s5.png" alt="Event Information" />
+<p align="center">
+    <img loading="lazy" width="90%" src="./screenshots/s5.png" alt="Event Information" />
+</p>
 
 *Gestion des Photos Acquises*
 
-<img loading="lazy" width="90%" src="./screenshots/s6.png" alt="Management of Acquired Photos" />
+<p align="center">
+    <img loading="lazy" width="90%" src="./screenshots/s6.png" alt="Management of Acquired Photos" />
+</p>

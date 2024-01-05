@@ -88,24 +88,36 @@
 
 *ログイン*
 
-<img loading="lazy" width="90%" src="./screenshots/s1.png" alt="Login" />
+<p align="center">
+    <img loading="lazy" width="90%" src="./screenshots/s1.png" alt="Login" />
+</p>
 
 *ダッシュボード*
 
-<img loading="lazy" width="90%" src="./screenshots/s2.png" alt="Dashboard" />
+<p align="center">
+    <img loading="lazy" width="90%" src="./screenshots/s2.png" alt="Dashboard" />
+</p>
 
 *写真家の管理*
 
-<img loading="lazy" width="90%" src="./screenshots/s3.png" alt="Photographers Management" />
+<p align="center">
+    <img loading="lazy" width="90%" src="./screenshots/s3.png" alt="Photographers Management" />
+</p>
 
 *イベントの管理*
 
-<img loading="lazy" width="90%" src="./screenshots/s4.png" alt="Event Management" />
+<p align="center">
+    <img loading="lazy" width="90%" src="./screenshots/s4.png" alt="Event Management" />
+</p>
 
 *イベント情報*
 
-<img loading="lazy" width="90%" src="./screenshots/s5.png" alt="Event Information" />
+<p align="center">
+    <img loading="lazy" width="90%" src="./screenshots/s5.png" alt="Event Information" />
+</p>
 
 *取得した写真の管理*
 
-<img loading="lazy" width="90%" src="./screenshots/s6.png" alt="Management of Acquired Photos" />
+<p align="center">
+    <img loading="lazy" width="90%" src="./screenshots/s6.png" alt="Management of Acquired Photos" />
+</p>
