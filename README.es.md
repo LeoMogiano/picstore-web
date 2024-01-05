@@ -90,26 +90,31 @@ Echa un vistazo a algunas capturas de pantalla de la plataforma a continuación.
 <p align="center">
     <img loading="lazy" width="90%" src="./screenshots/s1.png" alt="Login" />
 </p>
+
 *Dashboard*
 
 <p align="center">
     <img loading="lazy" width="90%" src="./screenshots/s2.png" alt="Dashboard" />
 </p>
+
 *Gestión de Fotógrafos*
 
 <p align="center">
     <img loading="lazy" width="90%" src="./screenshots/s3.png" alt="Photographers Management" />
 </p>
+
 *Gestión de Eventos*
 
 <p align="center">
     <img loading="lazy" width="90%" src="./screenshots/s4.png" alt="Event Management" />
 </p>
+
 *Información del Evento*
 
 <p align="center">
     <img loading="lazy" width="90%" src="./screenshots/s5.png" alt="Event Information" />
 </p>
+
 *Gestión de Fotos Adquiridas*
 
 <p align="center">
