@@ -2,7 +2,7 @@
 [English](./README.md) | [Español](./README.es.md) | [Français](./README.fr.md) | [日本語](./README.jp.md)
 
 <p align="center">
-  <img loading="lazy" src="./public/img/fav.png" alt="Logo" />
+  <img loading="lazy" src="./public/img/fav.png" alt="Logo" style="border-radius: 50%;" />
 </p>
 
 This is the repository for the Photo Management Platform for Social Events based on Artificial Intelligence (AI). This application is developed using the Laravel framework and focuses on managing and organizing photos for events such as weddings, parties, graduations, and more, leveraging AI to simplify and enhance the user experience.
