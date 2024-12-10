@@ -19,7 +19,7 @@
         "sass-loader": "^12.3.0"
     },
     "dependencies": {
-        "express": "^4.21.1",
+        "express": "^4.21.2",
         "socket.io": "^4.8.0",
         "uuid": "^9.0.0"
     }
